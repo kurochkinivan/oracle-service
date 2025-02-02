@@ -9,9 +9,8 @@ services:
       - "1521:1521"
       - "5500:5500"
     environment:
-      ORACLE_PASSWORD: 12345  # Задайте пароль для SYS, SYSTEM, PDBADMIN
-      ORACLE_DATABASE: XEPDB1            # Имя PDB (по умолчанию XEPDB1)
-      ORACLE_CHARACTERSET: AL32UTF8       # Кодировка базы
+      ORACLE_PASSWORD: 12345
+      ORACLE_CHARACTERSET: AL32UTF8
     volumes:
       - oracle_data:/opt/oracle/oradata
 
